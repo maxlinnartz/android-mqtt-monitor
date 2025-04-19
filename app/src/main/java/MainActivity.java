@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         // MQTT Client initialisieren
         mqttClient = MqttClient.builder()
                 .useMqttVersion3()
-                .serverHost("192.168.214.98")  // MQTT Broker IP
+                .serverHost("localhost")  // MQTT Broker IP
                 .serverPort(1883)
                 .buildAsync();
 

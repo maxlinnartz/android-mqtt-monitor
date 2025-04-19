@@ -11,9 +11,6 @@ Eine Android-App zur Überwachung von Geräteleistungsdaten, die diese über das
 - Echtzeitübertragung mit stabiler Verbindung
 - Schlichte und übersichtliche Benutzeroberfläche
 
-## 📷 Screenshots
-
-!Screenshot()
 
 ## 🛠️ Technologien
 

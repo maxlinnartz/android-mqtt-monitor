@@ -1,6 +1,6 @@
 # Android MQTT Monitor
 
-Eine Android-App zur Überwachung von Geräteleistungsdaten, die diese über das MQTT-Protokoll an einen zentralen Server sendet. Entwickelt mit Java und Android Studio – ideal für IoT- und Telemetrie-Anwendungen.
+Eine Android-App zur Überwachung von Geräteleistungsdaten, die diese über das MQTT-Protokoll an einen zentralen Server sendet. Entwickelt mit Java und Android Studio – ideal für IoT-Anwendungen.
 
 ## 🚀 Funktionen
 

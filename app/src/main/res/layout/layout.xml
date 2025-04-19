@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Begrüßungstext in der Mitte des Bildschirms -->
+    <TextView
+        android:id="@+id/helloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Leistungsüberwachung aktiv!"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <!-- IP-Anzeige unter dem Begrüßungstext -->
+    <TextView
+        android:id="@+id/ipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/helloText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+
+    <LinearLayout
+        android:id="@+id/performanceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ipTextView"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/hardware_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hardware-Parameter:"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- CPU-Auslastungsanzeige -->
+            <TextView
+                android:id="@+id/cpu_usage_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU Verbrauch:"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cpu_usage_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="keine Daten..."
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- CPU-Auslastungsanzeige -->
+            <TextView
+                android:id="@+id/ram_usage_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAM Verbrauch:"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ram_usage_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="keine Daten..."
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <!-- Batterie-Prozentsatz Label und Wert -->
+            <TextView
+                android:id="@+id/batteryPercentageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Akku Zustand:"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <!-- Ladezustandsanzeige neben Akku-Prozentsatz -->
+            <TextView
+                android:id="@+id/batteryPercentageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="keine Daten..."
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/batteryTempTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="keine Daten..."
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/chargingStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="keine Daten..."
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/netzwerkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ipTextView"
+        android:orientation="vertical"
+        android:layout_marginTop="150dp"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/netzwerk_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Netzwerk-Parameter:"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/wlan_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WLAN:"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wlan_nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="keine Daten..."
+            android:textSize="12sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wlan_SpeedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="keine Daten..."
+            android:textSize="12sp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

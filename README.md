@@ -5,22 +5,21 @@ Eine Android-App zur Überwachung von Geräteleistungsdaten, die diese über das
 ## 🚀 Funktionen
 
 - Erfassen von Leistungsdaten (z. B. CPU-Auslastung, RAM-Verbrauch)
-- Senden der Daten über MQTT an einen Broker/Server
-- Konfigurierbare MQTT-Parameter (Broker, Port, Topic etc.)
-- Echtzeitübertragung
-- Übersichtliche Benutzeroberfläche
+- Senden der Daten über MQTT an einen Server (Broker)
+- Konfigurierbare MQTT-Parameter (Broker-URL, Port, Topic, etc.)
+- Verwendung des modernen HiveMQ MQTT Clients
+- Echtzeitübertragung mit stabiler Verbindung
+- Schlichte und übersichtliche Benutzeroberfläche
 
 ## 📷 Screenshots
 
-*(Hier kannst du später ein oder zwei Screenshots deiner App einfügen, z. B. so:)*
-
-![Screenshot](screenshots/main_screen.png)
+!Screenshot()
 
 ## 🛠️ Technologien
 
 - Java
 - Android SDK
-- [Eclipse Paho MQTT Library](https://www.eclipse.org/paho/)
+- [HiveMQ MQTT Client](https://github.com/hivemq/hivemq-mqtt-client)
 - Android Studio
 
 ## ⚙️ Installation

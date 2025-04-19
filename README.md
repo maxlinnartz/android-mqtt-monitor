@@ -19,8 +19,4 @@ Eine Android-App zur Überwachung von Geräteleistungsdaten, die diese über das
 - [HiveMQ MQTT Client](https://github.com/hivemq/hivemq-mqtt-client)
 - Android Studio
 
-## ⚙️ Installation
 
-1. Klone das Repository:
-   ```bash
-   git clone https://github.com/maxlinnartz/android-mqtt-monitor.git
